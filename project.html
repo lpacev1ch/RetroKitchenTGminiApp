@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" type="text/css" rel="stylesheet">
+    <script src="script.js" defer></script>
+    <title>Ретро кухня</title>
+</head>
+<body>
+    <div class = "projectPage">
+        <div class = "projectLogo">
+            <img src = "img/flame.png">
+        </div>
+
+        <div class = "projectPlashka">
+            
+            <div class = "projectInfo">
+                <div class="namePriceWrapper">
+                    <h1 class = "Headline">?NAME?</h1>
+                    <h1 class = "headlinePrice">?price?</h1>
+                </div>
+
+                <h1 class = "description">?description?</h1>
+            </div>
+
+            <div class="button-container">
+                <button class="section-button active" id="project-button">О проекте</button>
+
+                <button class="section-button" id="investment-button">Инвестиции</button>
+
+                <button class="section-button" id="potential-button">Потенциал</button>
+            </div>
+            
+            <div id="project-section" class="section active-section">Информация о проекте</div>
+
+            <div id="investment-section" class="section">Информация об инвестициях</div>
+
+            <div id="potential-section" class="section">Информация о потенциале</div>
+            
+
+
+            <h1 class = "razdelitel"></h1>
+
+            <details>
+                <summary class = "Headline">АККАУНТЫ</summary>
+                    <ul>
+                        <li>Установка расширения и фарминг ок. 1.5-2k поинтов/сутки до конца кампании</li>
+                        <li>Выполнение кампании на Galxe</li>
+                    </ul>
+
+                    <div class="price-control">
+                        <span class="price">100$ <small>/акк</small></span>
+                        <div class="quantity-control">
+                            <button class="decrement" id="decrement-accounts" onclick="decrement('accounts')">-</button>
+
+                            <span id="accounts-quantity">0</span>
+                            <button class="increment" onclick="increment('accounts')">+</button>
+                        </div>
+            </details>
+
+            <h1 class = "razdelitel"></h1>
+
+            <details>
+                <summary class = "Headline">ПОИНТЫ</summary>
+                    <ul>
+                        <li>Фарм поинтов на Ваши аккаунты</li>
+                    </ul>
+                    
+                    <div class="price-control">
+                        <span class="price">270$ <small>/100к поинтов</small></span>
+                        <div class="quantity-control">
+                            <button class="decrement" id="decrement-points" onclick="decrement('points')">-</button>
+                            <span id="points-quantity">0</span>
+                            <button class="increment" onclick="increment('points')">+</button>
+                        </div>
+                    </div>
+            </details>
+
+            <button id="pay-button" class="pay-button inactive" disabled>К ОПЛАТЕ</button>
+    </div>
+
+
+    <div class = "projectPay">
+
+    </div>
+    
+</body>
+</html>
